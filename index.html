@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Eawestern Tours — Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="header">
+  <div class="container">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="TravelGo Logo" />
+    </a>
+
+    <!-- Mobile menu toggle using checkbox -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="about.html" class="navbar-link">About Us</a></li>
+        <li><a href="tours.html" class="navbar-link">Travel & Tours</a></li>
+        <li><a href="carhire.html" class="navbar-link">Car Hire</a></li>
+        <li><a href="insurance.html" class="navbar-link">Insurance</a></li>
+
+        <!-- Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="navbar-link">Resources</a>
+          <ul class="dropdown-menu">
+            <li><a href="tips.html">Travel Tips</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </nav>
+
+  </div>
+</header>
+
+<!-- Hero with background video -->
+<section class="hero">
+  <!-- Put a short looped mp4 inside assets/hero.mp4 -->
+  <video autoplay muted loop playsinline src="images/video.mp4"></video>
+
+  <div class="hero-inner container">
+    <h1>Your journey of security and adventure begins here</h1>
+    <p>Guided tours, reliable car hire, and travel insurance — all under one roof.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="services.html">Explore Packages</a>
+      <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Sample Trips -->
+<section class="trips" style="background-color: #fff; padding: 60px 0 80px;">
+  <div class="container text-center" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center;">
+    <h2 style="text-transform: uppercase; letter-spacing: 2px; color: #080a08; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2.5rem; margin-bottom: 10px;">SAMPLE TRIPS</h2>
+    <p style="max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 10px; font-style: italic; color: #444; font-size: 1rem;">Imagine the Possibilities</p>
+    <p style="max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 30px; font-style: italic; color: #444; font-size: 1rem;">No two safaris we create are ever the same. These sample journeys offer a taste of what we do best: immersive, meticulously planned adventures across Africa’s most extraordinary landscapes.</p>
+    <div class="trips-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px;">
+      <div class="trip-card" tabindex="0" style="background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.3s ease; cursor: default;">
+        <img src="images/Maasai-Mara-1-1024x682.jpg" alt="Trip 1" style="width: 100%; height: 180px; object-fit: cover; display: block;">
+        <div class="trip-body" style="padding: 20px 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <h3 style="margin-top: 0; margin-bottom: 10px; color: #1a1a1a; font-size: 1.5rem;">Classic Safari Adventure</h3>
+          <p style="flex-grow: 1; color: #555; margin-bottom: 20px; font-size: 1rem;">Experience wildlife like never before on this timeless African safari.</p>
+          <a href="#"  style="display: inline-block;  color: #0a0909; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;">Learn More</a>
+        </div>
+      </div>
+      <div class="trip-card" tabindex="0" style="background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.3s ease; cursor: default;">
+        <img src="images/cheetah-standing-dead-tree.jpg" alt="Trip 2" style="width: 100%; height: 180px; object-fit: cover; display: block;">
+        <div class="trip-body" style="padding: 20px 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <h3 style="margin-top: 0; margin-bottom: 10px; color: #1a1a1a; font-size: 1.5rem;">Luxury Safari Escape</h3>
+          <p style="flex-grow: 1; color: #555; margin-bottom: 20px; font-size: 1rem;">Indulge in the comfort of world-class lodges amidst stunning landscapes.</p>
+          <a href="#"  style="display: inline-block;  color: #0a0909; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;">Learn More</a>
+        </div>
+      </div>
+      <div class="trip-card" tabindex="0" style="background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.3s ease; cursor: default;">
+        <img src="images/back.jpg" alt="Trip 3" style="width: 100%; height: 180px; object-fit: cover; display: block;">
+        <div class="trip-body" style="padding: 20px 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+          <h3 style="margin-top: 0; margin-bottom: 10px; color: #1a1a1a; font-size: 1.5rem;">Family Safari Journey</h3>
+          <p style="flex-grow: 1; color: #555; margin-bottom: 20px; font-size: 1rem;">Share unforgettable adventures with your loved ones across Africa.</p>
+          <a href="#"  style="display: inline-block;  color: #0a0909; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="trips-cta" style="margin-top: 40px;">
+      <a href="#" class="btn" style="display: inline-block; background-color:#063a8c; color: #fff; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;">Explore All Sample Trips</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Services preview -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">What We Offer</h2>
+    <p class="lead">Comprehensive travel services: expertly guided tours, convenient car hire, and travel insurance packages to keep you covered.</p>
+
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="images/vacation.jpg" alt="Tour Guide">
+        </div>
+        <h3>Tour Guide</h3>
+        <p>Local, professional guides who ensure your trip is authentic and smooth.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="images/Maasai-Mara-1-1024x682.jpg" alt="Friendly Price">
+        </div>
+        <h3>Friendly Price</h3>
+        <p>Transparent pricing and deals designed for value.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="images/car.jpg" alt="Car Hire">
+        </div>
+        <h3>Car Hire</h3>
+        <p>Reliable vehicles for city rides, safaris, and long-distance travel.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <img src="images/insure.jpg" alt="Travel Insurance">
+        </div>
+        <h3>Travel Insurance</h3>
+        <p>Coverage plans to protect you during your journey.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="section blog">
+  <div class="container">
+    <h2 class="h2 blog-title">Latest News & Articles</h2>
+  <div class="view-all-container">
+      <a href="#" class="btn btn-primary">View All Posts</a>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <figure class="card-banner">
+          <a href="#">
+            <img src="images/back.jpg" alt="Blog post 1" class="img-cover">
+          </a>
+          <span class="card-badge">
+            <ion-icon name="time-outline"></ion-icon>
+            <time datetime="12-04">04 Dec</time>
+          </span>
+        </figure>
+
+        <div class="card-content">
+          <h3 class="card-title">
+            <a href="#">A good traveler has no fixed plans and is not intent on arriving.</a>
+          </h3>
+          <a href="#" class="btn-link">
+            <span>Read More</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <figure class="card-banner">
+          <a href="#">
+            <img src="images/Maasai-Mara-1-1024x682.jpg" alt="Blog post 2" class="img-cover">
+          </a>
+          <span class="card-badge">
+            <ion-icon name="time-outline"></ion-icon>
+            <time datetime="12-04">04 Dec</time>
+          </span>
+        </figure>
+
+        <div class="card-content">
+          <h3 class="card-title">
+            <a href="#">Exploring the beauty of Maasai Mara – A travel guide.</a>
+          </h3>
+          <a href="#" class="btn-link">
+            <span>Read More</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+
+      <div class="blog-card">
+        <figure class="card-banner">
+          <a href="#">
+            <img src="images/travel.png" alt="Blog post 3" class="img-cover">
+          </a>
+          <span class="card-badge">
+            <ion-icon name="time-outline"></ion-icon>
+            <time datetime="12-04">04 Dec</time>
+          </span>
+        </figure>
+
+        <div class="card-content">
+          <h3 class="card-title">
+            <a href="#">Top travel tips for a stress-free adventure.</a>
+          </h3>
+          <a href="#" class="btn-link">
+            <span>Read More</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+  
+
+  </div>
+</section>
+
+<!-- Footer Section -->
+<section class="footer">
+  <div class="footer-row">
+
+    <!-- Info -->
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul class="links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Travel Guides</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Explore -->
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul class="links">
+        <li><a href="#">Tour Packages</a></li>
+        <li><a href="#">Car Hire</a></li>
+        <li><a href="#">Travel Insurance</a></li>
+        <li><a href="#">Hotel Booking</a></li>
+        <li><a href="#">Special Offers</a></li>
+        <li><a href="#">Adventure Trips</a></li>
+      </ul>
+    </div>
+
+    <!-- Legal -->
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul class="links">
+        <li><a href="#">Booking Terms</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Travel Safety</a></li>
+        <li><a href="#">Customer Reviews</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>
+        Subscribe for the latest travel deals, destination tips,  
+        and exclusive holiday offers straight to your inbox.
+      </p>
+      <form action="#">
+        <input type="text" placeholder="Your email" required>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

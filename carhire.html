@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eawestern Car Hire</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/your-kit.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="TravelGo Logo" />
+    </a>
+
+    <!-- Mobile menu toggle using checkbox -->
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><a href="index.html" class="navbar-link">Home</a></li>
+        <li><a href="about.html" class="navbar-link">About Us</a></li>
+        <li><a href="tours.html" class="navbar-link">Travel & Tours</a></li>
+        <li><a href="carhire.html" class="navbar-link">Car Hire</a></li>
+        <li><a href="insurance.html" class="navbar-link">Insurance</a></li>
+
+        <!-- Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="navbar-link">Resources</a>
+          <ul class="dropdown-menu">
+            <li><a href="tips.html">Travel Tips</a></li>
+            <li><a href="guides.html">Guides</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </nav>
+
+  </div>
+</header>
+
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <video autoplay muted loop>
+      <source src="images/car.mp4" type="video/mp4">
+    </video>
+    <div class="hero-inner">
+      <h1>Drive Your Journey with Comfort & Trust</h1>
+      <p>Affordable car hire and reliable insurance solutions, all in one place.</p>
+      <div class="hero-ctas">
+        <a href="#cars" class="btn btn-primary">Book a Car</a>
+        <a href="#services" class="btn btn-secondary">Get Insurance</a>
+      </div>
+    </div>
+  </section>
+  <!-- Section 3: Our Fleet -->
+<section style="padding: 4rem 1rem; max-width: 1200px; margin: 0 auto; text-align: center;">
+  <h2 style="font-size: 2rem; font-weight: 700; color: #1e40af; margin-bottom: 3rem;">Our Fleet</h2>
+  
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; text-align: left;">
+    
+    <!-- Car Card -->
+    <article style="background: white; border-radius: 0.75rem; box-shadow: 0 4px 12px rgb(0 0 0 / 0.1); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.3s ease;">
+      <img src="images/car3.jpg" alt="Toyota Corolla" style="width: 100%; object-fit: cover; aspect-ratio: 16/10;" />
+      <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 0.5rem; color: #1e40af;">Toyota Corolla</h3>
+        <p style="color: #4b5563; flex-grow: 1;">Reliable and fuel-efficient sedan, perfect for city and highway driving.</p>
+        <button style="margin-top: 1rem; background-color: #2563eb; color: white; font-weight: 700; padding: 0.75rem; border-radius: 0.5rem; border: none; cursor: pointer; transition: background-color 0.3s ease;">Book Now</button>
+      </div>
+    </article>
+
+    <!-- Car Card -->
+    <article style="background: white; border-radius: 0.75rem; box-shadow: 0 4px 12px rgb(0 0 0 / 0.1); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.3s ease;">
+      <img src="images/car5.jpg" alt="SUV" style="width: 100%; object-fit: cover; aspect-ratio: 16/10;" />
+      <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 0.5rem; color: #1e40af;">Ford Explorer</h3>
+        <p style="color: #4b5563; flex-grow: 1;">Spacious SUV with advanced safety features and off-road capability.</p>
+        <button style="margin-top: 1rem; background-color: #2563eb; color: white; font-weight: 700; padding: 0.75rem; border-radius: 0.5rem; border: none; cursor: pointer; transition: background-color 0.3s ease;">Book Now</button>
+      </div>
+    </article>
+
+    <!-- Car Card -->
+    <article style="background: white; border-radius: 0.75rem; box-shadow: 0 4px 12px rgb(0 0 0 / 0.1); overflow: hidden; display: flex; flex-direction: column; transition: transform 0.3s ease;">
+      <img src="images/car2.jpg" alt="Luxury Car" style="width: 100%; object-fit: cover; aspect-ratio: 16/10;" />
+      <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 0.5rem; color: #1e40af;">Mercedes-Benz C-Class</h3>
+        <p style="color: #4b5563; flex-grow: 1;">Luxury sedan with premium comfort and cutting-edge technology.</p>
+        <button style="margin-top: 1rem; background-color: #2563eb; color: white; font-weight: 700; padding: 0.75rem; border-radius: 0.5rem; border: none; cursor: pointer; transition: background-color 0.3s ease;">Book Now</button>
+      </div>
+    </article>
+  </div>
+
+  <!-- See More Button -->
+  <div style="margin-top: 3rem;">
+    <a href="#" style="background-color: #1e40af; color: white; font-weight: 700; padding: 1rem 2.5rem; border-radius: 9999px; text-decoration: none; transition: background-color 0.3s ease;">See More Cars</a>
+  </div>
+</section>
+
+
+   <!-- Section 1: Hero & Booking Form -->
+  <section style="background-image: url('https://source.unsplash.com/1600x900/?car,vehicle'); background-size: cover; background-position: center; padding: 4rem 1rem;">
+    <div style="max-width: 1200px; margin: 0 auto; background-color: rgba(0,0,0,0.55); border-radius: 0.75rem; padding: 2rem; color: white;">
+      <h1 style="font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem;">Find Your Perfect Ride.</h1>
+      <p style="font-size: 1.25rem; margin-bottom: 2rem;">Seamlessly book a car for your next adventure.</p>
+      <form id="bookingForm" style="display: grid; grid-template-columns: 1fr; gap: 1rem; max-width: 900px;">
+        <input type="text" id="pickup" name="pickup" placeholder="Pickup Location" aria-label="Pickup Location" required style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: none; font-size: 1rem;" />
+        <input type="text" id="dropoff" name="dropoff" placeholder="Drop-off Location (optional)" aria-label="Drop-off Location" style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: none; font-size: 1rem;" />
+        <input type="date" id="pickupDate" name="pickupDate" aria-label="Pickup Date" required style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: none; font-size: 1rem;" />
+        <input type="date" id="dropoffDate" name="dropoffDate" aria-label="Drop-off Date" required style="padding: 0.75rem 1rem; border-radius: 0.5rem; border: none; font-size: 1rem;" />
+        <button type="submit" style="background-color: #2563eb; color: white; font-weight: 700; font-size: 1.125rem; padding: 0.75rem 0; border-radius: 0.5rem; border: none; cursor: pointer; transition: background-color 0.3s ease;">Search</button>
+      </form>
+    </div>
+  </section>
+
+
+  <script>
+    // Responsive grid for form inputs on wider screens
+    function updateFormGrid() {
+      const form = document.getElementById('bookingForm');
+      if(window.innerWidth >= 640) {
+        form.style.gridTemplateColumns = 'repeat(2, 1fr)';
+      } else {
+        form.style.gridTemplateColumns = '1fr';
+      }
+    }
+    window.addEventListener('resize', updateFormGrid);
+    window.addEventListener('load', updateFormGrid);
+
+    // Simple form validation for dates
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      const pickupDate = document.getElementById('pickupDate').value;
+      const dropoffDate = document.getElementById('dropoffDate').value;
+      if(pickupDate && dropoffDate && dropoffDate < pickupDate) {
+        e.preventDefault();
+        alert('Drop-off date must be the same or after Pickup date.');
+      }
+    });
+  </script>
+
+  <!-- Section 2: Why Choose Us -->
+  <section style="padding: 4rem 1rem; max-width: 1200px; margin: 0 auto;">
+    <h2 style="font-size: 2rem; font-weight: 700; color: #1e40af; text-align: center; margin-bottom: 3rem;">Why Choose Us?</h2>
+    <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+      <div style="background: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 12px rgb(0 0 0 / 0.1); text-align: center;">
+        <i class="fas fa-car-side" style="font-size: 3rem; color: #2563eb; margin-bottom: 1rem;"></i>
+        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 0.5rem;">Wide Vehicle Range</h3>
+        <p style="color: #374151;">From compact cars to spacious SUVs, find the perfect vehicle for any trip.</p>
+      </div>
+      <div style="background: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 12px rgb(0 0 0 / 0.1); text-align: center;">
+        <i class="fas fa-shield-alt" style="font-size: 3rem; color: #2563eb; margin-bottom: 1rem;"></i>
+        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 0.5rem;">Trusted & Secure</h3>
+        <p style="color: #374151;">Your safety is our priority with comprehensive insurance and 24/7 support.</p>
+      </div>
+      <div style="background: white; border-radius: 0.75rem; padding: 2rem; box-shadow: 0 4px 12px rgb(0 0 0 / 0.1); text-align: center;">
+        <i class="fas fa-clock" style="font-size: 3rem; color: #2563eb; margin-bottom: 1rem;"></i>
+        <h3 style="font-weight: 700; font-size: 1.25rem; margin-bottom: 0.5rem;">Easy Booking</h3>
+        <p style="color: #374151;">Quick and hassle-free booking process to get you on the road faster.</p>
+      </div>
+    </div>
+    <script>
+      // Responsive grid for cards
+      function updateWhyGrid() {
+        const container = document.querySelector('section:nth-of-type(2) > div');
+        if(window.innerWidth >= 1024) {
+          container.style.gridTemplateColumns = 'repeat(3, 1fr)';
+        } else if(window.innerWidth >= 640) {
+          container.style.gridTemplateColumns = 'repeat(2, 1fr)';
+        } else {
+          container.style.gridTemplateColumns = '1fr';
+        }
+      }
+      window.addEventListener('resize', updateWhyGrid);
+      window.addEventListener('load', updateWhyGrid);
+    </script>
+  </section>
+
+
+
+  <!-- Section 4: Call to Action -->
+  <section style="background-color: #2563eb; color: white; padding: 4rem 1rem; text-align: center;">
+    <h2 style="font-size: 2rem; font-weight: 700; margin-bottom: 0.5rem;">Ready to Start Your Journey?</h2>
+    <p style="font-size: 1.25rem; margin-bottom: 2rem;">Book your car today and drive with confidence.</p>
+    <button style="background-color: white; color: #2563eb; font-weight: 700; font-size: 1.125rem; padding: 0.75rem 2rem; border-radius: 0.5rem; border: none; cursor: pointer; transition: background-color 0.3s ease;">Book Now</button>
+  </section>
+
+
+
+
+
+<!-- Footer Section -->
+<section class="footer">
+  <div class="footer-row">
+
+    <!-- Info -->
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul class="links">
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Destinations</a></li>
+        <li><a href="#">Travel Guides</a></li>
+        <li><a href="#">Our Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Explore -->
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <ul class="links">
+        <li><a href="#">Tour Packages</a></li>
+        <li><a href="#">Car Hire</a></li>
+        <li><a href="#">Travel Insurance</a></li>
+        <li><a href="#">Hotel Booking</a></li>
+        <li><a href="#">Special Offers</a></li>
+        <li><a href="#">Adventure Trips</a></li>
+      </ul>
+    </div>
+
+    <!-- Legal -->
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul class="links">
+        <li><a href="#">Booking Terms</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Travel Safety</a></li>
+        <li><a href="#">Customer Reviews</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="footer-col">
+      <h4>Newsletter</h4>
+      <p>
+        Subscribe for the latest travel deals, destination tips,  
+        and exclusive holiday offers straight to your inbox.
+      </p>
+      <form action="#">
+        <input type="text" placeholder="Your email" required>
+        <button type="submit">SUBSCRIBE</button>
+      </form>
+      <div class="icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="go-top" data-go-top aria-label="Go To Top">
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+ <script>
+      // Responsive grid for fleet cards
+      function updateFleetGrid() {
+        const container = document.querySelector('section:nth-of-type(3) > div');
+        if(window.innerWidth >= 1024) {
+          container.style.gridTemplateColumns = 'repeat(3, 1fr)';
+        } else if(window.innerWidth >= 640) {
+          container.style.gridTemplateColumns = 'repeat(2, 1fr)';
+        } else {
+          container.style.gridTemplateColumns = '1fr';
+        }
+      }
+      window.addEventListener('resize', updateFleetGrid);
+      window.addEventListener('load', updateFleetGrid);
+    </script>
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
