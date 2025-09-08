@@ -68,8 +68,105 @@
     </div>
   </div>
 </section>
+<!-- About Us Section -->
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px; font-family: 'Poppins', Arial, sans-serif; color: #333;">
+  <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 40px; background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    
+    <!-- Left Column: Text -->
+    <div style="flex:1 1 500px; display:flex; flex-direction:column; justify-content:center;">
+      <p style="font-size: 14px; color: var(--brand-blue); margin: 0;">Explore. Insure. Travel.</p>
+      <h1 style="font-size: 32px; font-weight: bold; margin: 10px 0; color: #222;">Welcome to Eawestern – Travel & Insurance Agency</h1>
+      <div style="width: 60px; height: 4px; background-color: var(--brand-blue); margin-bottom: 20px;"></div>
+
+      <p style="font-size: 16px; line-height: 1.7; margin-bottom: 15px;">
+        Eawestern is a trusted travel and insurance agency in Kenya, dedicated to delivering memorable journeys and reliable protection. We specialize in tailor-made tours and safaris across East Africa, connecting you to the region’s breathtaking destinations, rich cultures, and best accommodations.
+      </p>
+
+      <p style="font-size: 16px; line-height: 1.7; margin-bottom: 20px;">
+        At Eawestern, we don’t just offer services—we create experiences, provide peace of mind, and build lasting trust.
+      </p>
+
+      <!-- Call-to-Action Buttons -->
+      <div style="margin-top: 10px; display:flex; gap:15px;">
+        <a href="services.html" class="btn btn-primary">Explore Packages</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- Right Column: Carousel -->
+    <div style="flex:1 1 500px; position: relative; border-radius: 12px; overflow: hidden; max-height:500px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+
+      <!-- Carousel Slides -->
+      <div id="carouselSlides" style="position: relative; width: 100%; height: 100%;">
+        <!-- Slides dynamically injected by JS -->
+      </div>
+
+      <!-- Carousel Controls (use brand-blue buttons) -->
+      <button id="prevBtn" class="btn btn-primary" style="position:absolute; top:50%; left:10px; transform:translateY(-50%); padding:10px 14px; border-radius:50%;">&#10094;</button>
+      <button id="nextBtn" class="btn btn-primary" style="position:absolute; top:50%; right:10px; transform:translateY(-50%); padding:10px 14px; border-radius:50%;">&#10095;</button>
+
+    </div>
+  </div>
+</div>
 
 
+<script>
+  const slidesData = [
+    {
+      title: "Travel",
+      description: "Explore East Africa with our tailor-made tours and safaris.",
+      img: "images/travel.png"
+    },
+    {
+      title: "Insurance",
+      description: "Reliable insurance coverage for all your trips and travels.",
+      img: "images/insure.jpg"
+    },
+    {
+      title: "Car Hire",
+      description: "Comfortable and safe car hire services across Kenya.",
+      img: "images/car1.jpg"
+    }
+  ];
+
+  let currentSlide = 0;
+  const slidesContainer = document.getElementById('carouselSlides');
+
+  function showSlide(index) {
+    const slide = slidesData[index];
+    slidesContainer.innerHTML = `
+      <img src="${slide.img}" alt="${slide.title}" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+      <div style="position:absolute; bottom:20px; left:20px; background:rgba(0,0,0,0.5); color:white; padding:10px 15px; border-radius:8px;">
+        <h3 style="margin:0; font-size:20px;">${slide.title}</h3>
+        <p style="margin:5px 0 0; font-size:14px;">${slide.description}</p>
+      </div>
+    `;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slidesData.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slidesData.length) % slidesData.length;
+    showSlide(currentSlide);
+  }
+
+  // Initialize first slide
+  showSlide(currentSlide);
+
+  // Auto-slide every 4 seconds
+  setInterval(nextSlide, 4000);
+
+  // Button events
+  document.getElementById('nextBtn').addEventListener('click', nextSlide);
+  document.getElementById('prevBtn').addEventListener('click', prevSlide);
+</script>
+
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 <div style="display: flex; justify-content: space-around; padding: 20px; background-color: #f0f4f8; border-radius: 10px;">
     <div style="text-align: center; background-color: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); width: 22%; display: flex; flex-direction: column; align-items: center;">
         <i class="fas fa-binoculars" style="font-size: 40px; color: #4caf50; margin-bottom: 10px;"></i>
@@ -89,83 +186,59 @@
         <span style="font-size: 14px; font-weight: bold; color: #333;">CAR HIRE</span>
     </div>
 </div>
-<!-- About Us Section -->
-<div style="max-width: 1200px; margin: 0 auto; padding: 40px; font-family: Arial, sans-serif; color: #333;">
-  <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 40px; background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-    
-    <!-- Left Column: Text -->
-    <div style="flex:1 1 500px; display:flex; flex-direction:column; justify-content:center;">
-      <p style="font-size: 14px; color: #1e90ff; margin: 0;">Explore. Insure. Travel.</p>
-      <h1 style="font-size: 32px; font-weight: bold; margin: 10px 0; color: #222;">Welcome to Eawestern – Travel & Insurance Agency</h1>
-      <div style="width: 60px; height: 4px; background-color: #1e90ff; margin-bottom: 20px;"></div>
 
-      <p style="font-size: 16px; line-height: 1.7; margin-bottom: 15px;">
-        Eawestern is a trusted travel and insurance agency in Kenya, dedicated to delivering memorable journeys and reliable protection. We specialize in tailor-made tours and safaris across East Africa, connecting you to the region’s breathtaking destinations, rich cultures, and best accommodations.
-      </p>
-
-      <p style="font-size: 16px; line-height: 1.7; margin-bottom: 20px;">
-        At Eawestern, we don’t just offer services—we create experiences, provide peace of mind, and build lasting trust.
-      </p>
-    </div>
-
-    <!-- Right Column: Image + Social Links -->
-    <div style="flex:1 1 500px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px;">
-      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" 
-           alt="Safari scene in East Africa" 
-           style="width:100%; height:100%; max-height:500px; border-radius:12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit:cover;">
-
-      <!-- Social Media Icons (below image) -->
-      <div style="display: flex; gap: 15px; justify-content:center;" aria-label="social links">
-        <a href="#" style="font-size:22px; color:#3b5998; text-decoration:none;" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" style="font-size:22px; color:#00acee; text-decoration:none;" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" style="font-size:22px; color:#c13584; text-decoration:none;" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" style="font-size:22px; color:#0077b5; text-decoration:none;" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 
 <!-- Sample Trips -->
 <section class="trips" style="background-color: #fff; padding: 60px 0 80px;">
   <div class="container text-center" style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center;">
-    <h2 style="text-transform: uppercase; letter-spacing: 2px; color: #080a08; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 2.5rem; margin-bottom: 10px;">TRIPS</h2>
-    <p style="max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 10px; font-style: italic; color: #444; font-size: 1rem;">Imagine the Possibilities</p>
-    <p style="max-width: 700px; margin-left: auto; margin-right: auto; margin-bottom: 30px; font-style: italic; color: #444; font-size: 1rem;">No two safaris we create are ever the same. These sample journeys offer a taste of what we do best: immersive, meticulously planned adventures across Africa’s most extraordinary landscapes.</p>
+    
+    <!-- Heading -->
+    <h2 style="text-transform: uppercase; letter-spacing: 2px; color: #080a08; font-family: 'Poppins', sans-serif; font-size: 2.5rem; margin-bottom: 10px;">TRIPS</h2>
+    <p style="max-width: 700px; margin: 0 auto 10px; font-style: italic; color: #444; font-size: 1rem;">Imagine the Possibilities</p>
+    <p style="max-width: 700px; margin: 0 auto 30px; font-style: italic; color: #444; font-size: 1rem;">No two safaris we create are ever the same. These sample journeys offer a taste of what we do best: immersive, meticulously planned adventures across Africa’s most extraordinary landscapes.</p>
+    
+    <!-- Grid -->
     <div class="trips-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 30px;">
-      <div class="trip-card" tabindex="0" style="background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.3s ease; cursor: default;">
+      
+      <!-- Trip Card -->
+      <div class="trip-card" tabindex="0" style="background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.3s ease;">
         <img src="images/Maasai-Mara-1-1024x682.jpg" alt="Trip 1" style="width: 100%; height: 180px; object-fit: cover; display: block;">
         <div class="trip-body" style="padding: 20px 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
-          <h3 style="margin-top: 0; margin-bottom: 10px; color: #1a1a1a; font-size: 1.5rem;">Adventures</h3>
+          <h3 style="margin: 0 0 10px; color: #1a1a1a; font-size: 1.5rem;">Adventures</h3>
           <p style="flex-grow: 1; color: #555; margin-bottom: 20px; font-size: 1rem;">Experience wildlife like never before on this timeless African safari.</p>
-          <a href="#"  style="display: inline-block;  color: #0a0909; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;">Learn More</a>
+          <a href="#" class="btn btn-primary">Learn More</a>
         </div>
       </div>
-      <div class="trip-card" tabindex="0" style="background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.3s ease; cursor: default;">
+      
+      <!-- Trip Card -->
+      <div class="trip-card" tabindex="0" style="background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.3s ease;">
         <img src="images/cheetah-standing-dead-tree.jpg" alt="Trip 2" style="width: 100%; height: 180px; object-fit: cover; display: block;">
         <div class="trip-body" style="padding: 20px 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
-          <h3 style="margin-top: 0; margin-bottom: 10px; color: #1a1a1a; font-size: 1.5rem;">Luxury Safari Escape</h3>
+          <h3 style="margin: 0 0 10px; color: #1a1a1a; font-size: 1.5rem;">Luxury Safari Escape</h3>
           <p style="flex-grow: 1; color: #555; margin-bottom: 20px; font-size: 1rem;">Indulge in the comfort of world-class lodges amidst stunning landscapes.</p>
-          <a href="#"  style="display: inline-block;  color: #0a0909; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;">Learn More</a>
+          <a href="#" class="btn btn-primary">Learn More</a>
         </div>
       </div>
-      <div class="trip-card" tabindex="0" style="background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.3s ease; cursor: default;">
+      
+      <!-- Trip Card -->
+      <div class="trip-card" tabindex="0" style="background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); overflow: hidden; display: flex; flex-direction: column; transition: box-shadow 0.3s ease;">
         <img src="images/back.jpg" alt="Trip 3" style="width: 100%; height: 180px; object-fit: cover; display: block;">
         <div class="trip-body" style="padding: 20px 25px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
-          <h3 style="margin-top: 0; margin-bottom: 10px; color: #1a1a1a; font-size: 1.5rem;">Family Safari Journey</h3>
+          <h3 style="margin: 0 0 10px; color: #1a1a1a; font-size: 1.5rem;">Family Safari Journey</h3>
           <p style="flex-grow: 1; color: #555; margin-bottom: 20px; font-size: 1rem;">Share unforgettable adventures with your loved ones across Africa.</p>
-          <a href="#"  style="display: inline-block;  color: #0a0909; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;">Learn More</a>
+          <a href="#" class="btn btn-primary">Learn More</a>
         </div>
       </div>
     </div>
+    
+    <!-- CTA -->
     <div class="trips-cta" style="margin-top: 40px;">
-      <a href="#" class="btn" style="display: inline-block; background-color:#063a8c; color: #fff; padding: 12px 30px; border-radius: 30px; text-decoration: none; font-weight: 600; transition: background-color 0.3s ease;">Explore All Sample Trips</a>
+      <a href="#" class="btn btn-primary">Explore All Sample Trips</a>
     </div>
   </div>
 </section>
+
 
 
 <!-- Services preview -->
@@ -210,43 +283,47 @@
   </div>
 </section>
 
+<div style="font-family: Arial, sans-serif; text-align: center; padding: 60px 20px; background-color: #f7f7f7;">
+  <h1 style="color: #222; font-size: 32px; font-weight: bold; margin-bottom: 50px;">Easy Booking Process</h1>
 
-<div style="font-family: Arial, sans-serif; text-align: center; padding: 40px; background-color: #f7f7f7;">
-    <h1 style="color: #333; font-size: 32px; font-weight: bold; margin-bottom: 50px;">Easy Booking Process</h1>
-
-    <div style="display: flex; justify-content: space-around; max-width: 900px; margin: 0 auto;">
-        
-        <div style="text-align: center; width: 30%;">
-            <div style="color: rgb(37, 0, 204); margin-bottom: 20px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg>
-            </div>
-            <h2 style="color: #333; font-size: 18px; font-weight: bold; margin-bottom: 10px;">Choose Your Car</h2>
-            <p style="color: #666; font-size: 14px; line-height: 1.5;">Browse our fleet and select the perfect vehicle for your needs.</p>
-        </div>
-
-        <div style="text-align: center; width: 30%;">
-            <div style="color: rgb(31, 0, 204); margin-bottom: 20px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
-                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.473.473-.672 1.344-.464 2.197.31.908 1.154 1.637 2.031 2.502.878.865 1.614 1.706 2.52 2.029.85.208 1.736.009 2.213-.473l.89-1.042a.678.678 0 0 0-.063-1.015L9.672 6.346a.678.678 0 0 0-.964-.063l-.794.794c-.167.167-.354.269-.53.284-.181.015-.365-.028-.5-.148L5.756 7.647a.678.678 0 0 0-.063-.13L4.9 6.883a.678.678 0 0 0-.964-.063L3.654 1.328zM2.875 1.5a.678.678 0 0 1 .116-.017l.95-.238c.677-.169 1.43-.09 2.083.208l.394.185c.16.074.331.066.486-.021l.394-.185a.678.678 0 0 1 .486-.021l.394.185c.653-.298 1.406-.377 2.083-.208l.95.238a.678.678 0 0 1 .116.017L14.5 3.328a.678.678 0 0 1 .116-.017l.95-.238c.677-.169 1.43-.09 2.083.208l.394.185c.16.074.331.066.486-.021l.394-.185a.678.678 0 0 1 .486-.021l.394.185c.653-.298 1.406-.377 2.083-.208l.95.238a.678.678 0 0 1 .116-.017L14.5 3.328a.678.678 0 0 1 .116-.017l.95-.238c.677-.169 1.43-.09 2.083.208l.394.185c.16.074.331.066.486-.021l.394-.185a.678.678 0 0 1 .486-.021l.394.185c.653-.298 1.406-.377 2.083-.208l.95.238a.678.678 0 0 1 .116-.017L14.5 3.328zM.6 2a1.47 1.47 0 0 1 .28-.182l1.64-1.287a.678.678 0 0 1 .843.084l.794.794a.678.678 0 0 1-.063.964l-.89.89a.678.678 0 0 1-.964.063L1.583 3.315a.678.678 0 0 1-.964-.063l-.794-.794a.678.678 0 0 1-.063-.964L.6 2zM15.4 14a1.47 1.47 0 0 1-.28.182l-1.64 1.287a.678.678 0 0 1-.843-.084l-.794-.794a.678.678 0 0 1 .063-.964l.89-.89a.678.678 0 0 1 .964-.063l.794.794a.678.678 0 0 1 .063.964l.89.89a.678.678 0 0 1 .964.063L15.4 14z"/>
-                </svg>
-            </div>
-            <h2 style="color: #333; font-size: 18px; font-weight: bold; margin-bottom: 10px;">Make a Reservation</h2>
-            <p style="color: #666; font-size: 14px; line-height: 1.5;">Contact us to reserve your car and for personalized recommendations.</p>
-        </div>
-
-        <div style="text-align: center; width: 30%;">
-            <div style="color: rgb(44, 0, 204); margin-bottom: 20px;">
-                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-                </svg>
-            </div>
-            <h2 style="color: #333; font-size: 18px; font-weight: bold; margin-bottom: 10px;">Enjoy Your Ride</h2>
-            <p style="color: #666; font-size: 14px; line-height: 1.5;">Drive with confidence or opt for a professional driver for added convenience.</p>
-        </div>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; max-width: 1000px; margin: 0 auto;">
+    
+    <!-- Step 1 -->
+    <div style="text-align: center; flex: 1 1 250px; max-width: 280px;">
+      <div style="color: #063a8c; margin-bottom: 20px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+      </div>
+      <h2 style="color: #222; font-size: 18px; font-weight: bold; margin-bottom: 10px;">Choose Your Car</h2>
+      <p style="color: #555; font-size: 14px; line-height: 1.6;">Browse our fleet and select the perfect vehicle for your needs.</p>
     </div>
+
+    <!-- Step 2 -->
+    <div style="text-align: center; flex: 1 1 250px; max-width: 280px;">
+      <div style="color: #063a8c; margin-bottom: 20px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.473.473-.672 1.344-.464 2.197.31.908 1.154 1.637 2.031 2.502.878.865 1.614 1.706 2.52 2.029.85.208 1.736.009 2.213-.473l.89-1.042a.678.678 0 0 0-.063-1.015L9.672 6.346a.678.678 0 0 0-.964-.063l-.794.794c-.167.167-.354.269-.53.284-.181.015-.365-.028-.5-.148L5.756 7.647a.678.678 0 0 0-.063-.13L4.9 6.883a.678.678 0 0 0-.964-.063L3.654 1.328z"/>
+        </svg>
+      </div>
+      <h2 style="color: #222; font-size: 18px; font-weight: bold; margin-bottom: 10px;">Make a Reservation</h2>
+      <p style="color: #555; font-size: 14px; line-height: 1.6;">Contact us to reserve your car and get personalized recommendations.</p>
+    </div>
+
+    <!-- Step 3 -->
+    <div style="text-align: center; flex: 1 1 250px; max-width: 280px;">
+      <div style="color: #063a8c; margin-bottom: 20px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </svg>
+      </div>
+      <h2 style="color: #222; font-size: 18px; font-weight: bold; margin-bottom: 10px;">Enjoy Your Ride</h2>
+      <p style="color: #555; font-size: 14px; line-height: 1.6;">Drive with confidence or choose a professional driver for comfort.</p>
+    </div>
+
+  </div>
 </div>
+
 
 <section class="section blog">
   <div class="container">
