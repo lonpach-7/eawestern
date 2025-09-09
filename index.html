@@ -64,105 +64,10 @@
     <p>Guided tours, reliable car hire, and travel insurance — all under one roof.</p>
     <div class="hero-ctas">
       <a class="btn btn-primary" href="services.html">Explore Packages</a>
-      <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+      
     </div>
   </div>
 </section>
-<!-- About Us Section -->
-<div style="max-width: 1200px; margin: 0 auto; padding: 40px; font-family: 'Poppins', Arial, sans-serif; color: #333;">
-  <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 40px; background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-    
-    <!-- Left Column: Text -->
-    <div style="flex:1 1 500px; display:flex; flex-direction:column; justify-content:center;">
-      <p style="font-size: 14px; color: var(--brand-blue); margin: 0;">Explore. Insure. Travel.</p>
-      <h1 style="font-size: 32px; font-weight: bold; margin: 10px 0; color: #222;">Welcome to Eawestern – Travel & Insurance Agency</h1>
-      <div style="width: 60px; height: 4px; background-color: var(--brand-blue); margin-bottom: 20px;"></div>
-
-      <p style="font-size: 16px; line-height: 1.7; margin-bottom: 15px;">
-        Eawestern is a trusted travel and insurance agency in Kenya, dedicated to delivering memorable journeys and reliable protection. We specialize in tailor-made tours and safaris across East Africa, connecting you to the region’s breathtaking destinations, rich cultures, and best accommodations.
-      </p>
-
-      <p style="font-size: 16px; line-height: 1.7; margin-bottom: 20px;">
-        At Eawestern, we don’t just offer services—we create experiences, provide peace of mind, and build lasting trust.
-      </p>
-
-      <!-- Call-to-Action Buttons -->
-      <div style="margin-top: 10px; display:flex; gap:15px;">
-        <a href="services.html" class="btn btn-primary">Explore Packages</a>
-        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
-      </div>
-    </div>
-
-    <!-- Right Column: Carousel -->
-    <div style="flex:1 1 500px; position: relative; border-radius: 12px; overflow: hidden; max-height:500px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-
-      <!-- Carousel Slides -->
-      <div id="carouselSlides" style="position: relative; width: 100%; height: 100%;">
-        <!-- Slides dynamically injected by JS -->
-      </div>
-
-      <!-- Carousel Controls (use brand-blue buttons) -->
-      <button id="prevBtn" class="btn btn-primary" style="position:absolute; top:50%; left:10px; transform:translateY(-50%); padding:10px 14px; border-radius:50%;">&#10094;</button>
-      <button id="nextBtn" class="btn btn-primary" style="position:absolute; top:50%; right:10px; transform:translateY(-50%); padding:10px 14px; border-radius:50%;">&#10095;</button>
-
-    </div>
-  </div>
-</div>
-
-
-<script>
-  const slidesData = [
-    {
-      title: "Travel",
-      description: "Explore East Africa with our tailor-made tours and safaris.",
-      img: "images/travel.png"
-    },
-    {
-      title: "Insurance",
-      description: "Reliable insurance coverage for all your trips and travels.",
-      img: "images/insure.jpg"
-    },
-    {
-      title: "Car Hire",
-      description: "Comfortable and safe car hire services across Kenya.",
-      img: "images/car1.jpg"
-    }
-  ];
-
-  let currentSlide = 0;
-  const slidesContainer = document.getElementById('carouselSlides');
-
-  function showSlide(index) {
-    const slide = slidesData[index];
-    slidesContainer.innerHTML = `
-      <img src="${slide.img}" alt="${slide.title}" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
-      <div style="position:absolute; bottom:20px; left:20px; background:rgba(0,0,0,0.5); color:white; padding:10px 15px; border-radius:8px;">
-        <h3 style="margin:0; font-size:20px;">${slide.title}</h3>
-        <p style="margin:5px 0 0; font-size:14px;">${slide.description}</p>
-      </div>
-    `;
-  }
-
-  function nextSlide() {
-    currentSlide = (currentSlide + 1) % slidesData.length;
-    showSlide(currentSlide);
-  }
-
-  function prevSlide() {
-    currentSlide = (currentSlide - 1 + slidesData.length) % slidesData.length;
-    showSlide(currentSlide);
-  }
-
-  // Initialize first slide
-  showSlide(currentSlide);
-
-  // Auto-slide every 4 seconds
-  setInterval(nextSlide, 4000);
-
-  // Button events
-  document.getElementById('nextBtn').addEventListener('click', nextSlide);
-  document.getElementById('prevBtn').addEventListener('click', prevSlide);
-</script>
 
 
 <!-- Font Awesome -->
@@ -186,7 +91,6 @@
         <span style="font-size: 14px; font-weight: bold; color: #333;">CAR HIRE</span>
     </div>
 </div>
-
 
 
 <!-- Sample Trips -->
@@ -282,6 +186,56 @@
     </div>
   </div>
 </section>
+
+
+
+<!-- How It Works -->
+<section style="background-color: #fff; padding: 60px 0;">
+  <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px; text-align: center; font-family: 'Poppins', sans-serif; color: #14202b;">
+    
+    <!-- Heading -->
+    <h2 style="font-size: 2.5rem; font-weight: 600; margin-bottom: 10px;">HOW IT WORKS</h2>
+    <p style="font-size: 1rem; font-style: italic; color: #555; margin: 0 0 40px;">Planning a safari shouldn't feel like work. With us, it never does.</p>
+    
+    <!-- Cards -->
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;">
+      
+      <!-- Card 1 -->
+      <div 
+        style="flex: 1; min-width: 280px; background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); padding: 25px; display: flex; flex-direction: column; align-items: flex-start; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.15)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.08)';"
+      >
+        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 10px;">01. WE GET TO KNOW YOU</h3>
+        <p style="font-size: 1rem; color: #555; line-height: 1.6; margin: 0;">Before anything else, we listen. We want to understand what excites you, what matters to you, and how you imagine this journey. This is where your story begins.</p>
+      </div>
+      
+      <!-- Card 2 -->
+      <div 
+        style="flex: 1; min-width: 280px; background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); padding: 25px; display: flex; flex-direction: column; align-items: flex-start; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.15)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.08)';"
+      >
+        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 10px;">02. WE DESIGN YOUR SAFARI</h3>
+        <p style="font-size: 1rem; color: #555; line-height: 1.6; margin: 0;">With your vision in mind, we craft a tailor-made itinerary—no templates, no shortcuts. Just thoughtful, personalized design that reflects you, not the masses.</p>
+      </div>
+      
+      <!-- Card 3 -->
+      <div 
+        style="flex: 1; min-width: 280px; background-color: #fafafa; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08); padding: 25px; display: flex; flex-direction: column; align-items: flex-start; transition: transform 0.3s ease, box-shadow 0.3s ease;"
+        onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 10px 20px rgba(0,0,0,0.15)';"
+        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 10px rgba(0,0,0,0.08)';"
+      >
+        <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 10px;">03. WE HANDLE THE DETAILS</h3>
+        <p style="font-size: 1rem; color: #555; line-height: 1.6; margin: 0;">From touchdown to takeoff, we handle every detail—seamlessly. You’ll have 24/7 support while in Africa, and a dedicated team who treats your trip like it’s their own.</p>
+      </div>
+
+    </div>
+    
+  </div>
+</section>
+
+
 
 <div style="font-family: Arial, sans-serif; text-align: center; padding: 60px 20px; background-color: #f7f7f7;">
   <h1 style="color: #222; font-size: 32px; font-weight: bold; margin-bottom: 50px;">Easy Booking Process</h1>

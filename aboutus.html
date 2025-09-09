@@ -1,0 +1,157 @@
+<div style="max-width:1200px; width:100%; text-align:center; padding:0 1rem; margin:0 auto;">
+
+  <!-- Main Heading -->
+  <h1 style="font-family:'Playfair Display', serif; font-size:2.5rem; font-weight:300; color:#4a4a4a; margin:0 0 1rem 0;">
+    How It Works
+  </h1>
+
+  <!-- Decorative line and circle -->
+  <div style="display:flex; justify-content:center; align-items:center; gap:0.5rem; margin-bottom:2rem;">
+    <div style="flex:1; height:1px; background-color:#bda17e;"></div>
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="12" cy="12" r="10" fill="#bda17e" opacity="0.5"/>
+      <circle cx="12" cy="12" r="6" fill="#bda17e"/>
+    </svg>
+    <div style="flex:1; height:1px; background-color:#bda17e;"></div>
+  </div>
+
+  <!-- Subheading -->
+  <p style="font-size:1.125rem; color:#6b7280; margin-bottom:4rem;">
+    Planning a safari shouldn't feel like work. With us, it never does.
+  </p>
+
+  <!-- Cards Section: Flex Row -->
+  <div style="display:flex; flex-direction:row; justify-content:space-between; flex-wrap:wrap; gap:2rem;">
+
+    <!-- Card 1 -->
+    <div style="flex:1; min-width:250px; padding:2rem; border-radius:12px; background-color:#fafafa; border:1px solid #e0e0e0; box-sizing:border-box;">
+      <p style="font-family:'Playfair Display', serif; font-size:1.125rem; font-weight:600; color:#bda17e; margin-bottom:1rem;">
+        01. // WE GET TO KNOW YOU
+      </p>
+      <p style="font-size:1rem; color:#6b7280; line-height:1.6; margin:0;">
+        Before anything else, we listen. We want to understand what excites you, what matters to you, and how you imagine this journey. This is where your story begins.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div style="flex:1; min-width:250px; padding:2rem; border-radius:12px; background-color:#fafafa; border:1px solid #e0e0e0; box-sizing:border-box;">
+      <p style="font-family:'Playfair Display', serif; font-size:1.125rem; font-weight:600; color:#bda17e; margin-bottom:1rem;">
+        02. // WE DESIGN YOUR SAFARI
+      </p>
+      <p style="font-size:1rem; color:#6b7280; line-height:1.6; margin:0;">
+        With your vision in mind, we craft a tailor-made itinerary—no templates, no shortcuts. Just thoughtful, personalized design that reflects you, not the masses.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div style="flex:1; min-width:250px; padding:2rem; border-radius:12px; background-color:#fafafa; border:1px solid #e0e0e0; box-sizing:border-box;">
+      <p style="font-family:'Playfair Display', serif; font-size:1.125rem; font-weight:600; color:#bda17e; margin-bottom:1rem;">
+        03. // WE HANDLE THE DETAILS
+      </p>
+      <p style="font-size:1rem; color:#6b7280; line-height:1.6; margin:0;">
+        From touchdown to takeoff, we handle every detail—seamlessly. You’ll have 24/7 support while in Africa, and a dedicated team who treats your trip like it’s their own.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- About Us Section -->
+<div style="max-width: 1200px; margin: 0 auto; padding: 40px; font-family: 'Poppins', Arial, sans-serif; color: #333;">
+  <div style="display: flex; flex-wrap: wrap; align-items: stretch; gap: 40px; background-color: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    
+    <!-- Left Column: Text -->
+    <div style="flex:1 1 500px; display:flex; flex-direction:column; justify-content:center;">
+      <p style="font-size: 14px; color: var(--brand-blue); margin: 0;">Explore. Insure. Travel.</p>
+      <h1 style="font-size: 32px; font-weight: bold; margin: 10px 0; color: #222;">Welcome to Eawestern – Travel & Insurance Agency</h1>
+      <div style="width: 60px; height: 4px; background-color: var(--brand-blue); margin-bottom: 20px;"></div>
+
+      <p style="font-size: 16px; line-height: 1.7; margin-bottom: 15px;">
+        Eawestern is a trusted travel and insurance agency in Kenya, dedicated to delivering memorable journeys and reliable protection. We specialize in tailor-made tours and safaris across East Africa, connecting you to the region’s breathtaking destinations, rich cultures, and best accommodations.
+      </p>
+
+      <p style="font-size: 16px; line-height: 1.7; margin-bottom: 20px;">
+        At Eawestern, we don’t just offer services—we create experiences, provide peace of mind, and build lasting trust.
+      </p>
+
+      <!-- Call-to-Action Buttons -->
+      <div style="margin-top: 10px; display:flex; gap:15px;">
+        <a href="services.html" class="btn btn-primary">Explore Packages</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+      </div>
+    </div>
+
+    <!-- Right Column: Carousel -->
+    <div style="flex:1 1 500px; position: relative; border-radius: 12px; overflow: hidden; max-height:500px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+
+      <!-- Carousel Slides -->
+      <div id="carouselSlides" style="position: relative; width: 100%; height: 100%;">
+        <!-- Slides dynamically injected by JS -->
+      </div>
+
+      <!-- Carousel Controls (use brand-blue buttons) -->
+      <button id="prevBtn" class="btn btn-primary" style="position:absolute; top:50%; left:10px; transform:translateY(-50%); padding:10px 14px; border-radius:50%;">&#10094;</button>
+      <button id="nextBtn" class="btn btn-primary" style="position:absolute; top:50%; right:10px; transform:translateY(-50%); padding:10px 14px; border-radius:50%;">&#10095;</button>
+
+    </div>
+  </div>
+</div>
+
+
+<script>
+  const slidesData = [
+    {
+      title: "Travel",
+      description: "Explore East Africa with our tailor-made tours and safaris.",
+      img: "images/travel.png"
+    },
+    {
+      title: "Insurance",
+      description: "Reliable insurance coverage for all your trips and travels.",
+      img: "images/insure.jpg"
+    },
+    {
+      title: "Car Hire",
+      description: "Comfortable and safe car hire services across Kenya.",
+      img: "images/car1.jpg"
+    }
+  ];
+
+  let currentSlide = 0;
+  const slidesContainer = document.getElementById('carouselSlides');
+
+  function showSlide(index) {
+    const slide = slidesData[index];
+    slidesContainer.innerHTML = `
+      <img src="${slide.img}" alt="${slide.title}" style="width:100%; height:100%; object-fit:cover; border-radius:12px;">
+      <div style="position:absolute; bottom:20px; left:20px; background:rgba(0,0,0,0.5); color:white; padding:10px 15px; border-radius:8px;">
+        <h3 style="margin:0; font-size:20px;">${slide.title}</h3>
+        <p style="margin:5px 0 0; font-size:14px;">${slide.description}</p>
+      </div>
+    `;
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % slidesData.length;
+    showSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + slidesData.length) % slidesData.length;
+    showSlide(currentSlide);
+  }
+
+  // Initialize first slide
+  showSlide(currentSlide);
+
+  // Auto-slide every 4 seconds
+  setInterval(nextSlide, 4000);
+
+  // Button events
+  document.getElementById('nextBtn').addEventListener('click', nextSlide);
+  document.getElementById('prevBtn').addEventListener('click', prevSlide);
+</script>
